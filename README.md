@@ -5,9 +5,9 @@ YOLO stands for You Only Look Once.
 It is a real-time object recognition algorithm. It can classify and localize multiple objects in a single frame. 
 YOLO is a very fast and accurate algorithm for its simpler network architecture. 
 YOLO works using mainly these techniques:
-Residual Blocks – It divides an image into NxN grids.
-Bounding Box regression – Each grid cell is sent to the model. Then YOLO determines the probability of the cell contains a certain class and the class with the maximum probability is chosen.
-Intersection Over Union (IOU) – IOU is a metric that evaluates intersection between the predicted bounding box and the ground truth bounding box. A Non-max suppression technique is applied to eliminate the bounding boxes that are very close by performing the IoU with the one having the highest-class probability among them.
+Residual Blocks – It divides an image into NxN grids.  
+Bounding Box regression – Each grid cell is sent to the model. Then YOLO determines the probability of the cell contains a certain class and the class with the maximum probability is chosen.  
+Intersection Over Union (IOU) – IOU is a metric that evaluates intersection between the predicted bounding box and the ground truth bounding box. A Non-max suppression technique is applied to eliminate the bounding boxes that are very close by performing the IoU with the one having the highest-class probability among them.  
 
 We will use OpenCV’s DNN module to work with YOLO directly. DNN means Deep Neural Network. OpenCV has a built-in function to perform DNN algorithms.
 
